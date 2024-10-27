@@ -1,0 +1,137 @@
+/*dentro desse seletor podemos declarar variavéis*/
+:root {
+    --amarelo: #BFF009;
+    --cinza: #868585;
+    --preto: #1e1e1e;
+    --branco: #ffffff;
+    --cinzaclaro: #f2f2f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-align {
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+
+}
+
+.grid-cards {
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+header {
+    margin: 19px auto;
+}
+
+header section {
+    width: 1312px;
+    margin: 0px auto;
+    align-items: center;
+}
+
+header section nav {
+    gap: 32px;
+    background-color: var(--cinzaclaro);
+    padding: 16px;
+}
+
+header section nav a {
+    text-decoration: none;
+    color: var(--preto);
+    margin: 0 16px;
+}
+
+
+
+/*Esse > indica que somente o a que é filho de section é que vai receber as propriedades*/
+header section>a {
+    background-color: var(--amarelo);
+    padding: 16px;
+    text-decoration: none;
+}
+
+main section {
+    width: 1312px;
+    margin: 64px auto;
+}
+
+main header {
+    padding: 0px;
+    text-align: center;
+}
+
+main header small {
+    padding: 8px;
+    background-color: var(--amarelo);
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--preto);
+}
+
+main header p {
+    font-size: 14px;
+    color: var(--cinza);
+    max-width: 354px;
+    margin: 0 auto;
+}
+
+main header h1 {
+    font-size: 48px;
+    padding: 8px 8px;
+}
+
+main section>section {
+    gap: 32px;
+}
+
+main section .card {
+    width: 368px;
+    padding: 24px;
+    gap: 16px;
+    background-color: var(--cinzaclaro);
+    border-radius: 8px;
+}
+
+main section .card a {
+    color: var(--preto);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main section .card p {
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+main section .card:hover {
+    background-color: var(--preto);
+
+}
+
+main section .card a:hover {
+    color: var(--branco);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--preto);
+    padding: 46px 0px;
+    color: var(--cinza);
+
+}
